@@ -1,0 +1,26 @@
+[package]
+name = "youbing"
+version = "0.1.0"
+edition = "2021"
+authors = ["Tinmc189623"]
+description = "油饼语言（YouBing / .yb）的 Rust 解释器，带字节码 VM 与 Cranelift JIT"
+
+[lib]
+name = "youbing"
+path = "src/lib.rs"
+
+[[bin]]
+name = "youbing"
+path = "src/main.rs"
+
+[dependencies]
+cranelift-codegen = "0.137.1"
+cranelift-control = "0.137.1"
+cranelift-frontend = "0.137.1"
+cranelift-jit = "0.137.1"
+cranelift-module = "0.137.1"
+cranelift-native = "0.137.1"
+sha2 = "0.10"
+tiny_http = "0.12.0"
+
+[dev-dependencies]
